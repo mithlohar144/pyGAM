@@ -818,7 +818,7 @@ class GAM(Core, MetaTermMixin):
         if diff < self.tol:
             return
 
-        warnings.warn("Model optimization did not converge within tolerance")
+        print("did not converge")
         return
 
     def _on_loop_start(self, variables):
